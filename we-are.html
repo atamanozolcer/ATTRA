@@ -5,8 +5,23 @@
   <title>ATTRA - We Are</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .we-are-gallery .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .we-are-gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
 </head>
-<body class="dark-mode">
+<body>
   <header class="main-header">
     <nav class="navbar">
       <div class="nav-left">
@@ -24,8 +39,8 @@
     <img src="images/we-are/we-are-hero.png" alt="We Are Hero Image">
   </section>
 
-  <section class="gallery">
-    <div class="gallery-container">
+  <section class="we-are-gallery">
+    <div class="gallery">
       <img src="images/we-are/gallery01.jpg" alt="Factory View 1">
       <img src="images/we-are/gallery02.jpg" alt="Factory View 2">
       <img src="images/we-are/gallery03.jpg" alt="Factory View 3">
