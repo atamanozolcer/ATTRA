@@ -1,102 +1,47 @@
 
-@font-face {
-  font-family: 'Purista';
-  src: url('../fonts/Purista Thin.otf') format('opentype');
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Purista';
-  src: url('../fonts/Purista Light.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Purista';
-  src: url('../fonts/Purista Light Italic.otf') format('opentype');
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Purista';
-  src: url('../fonts/Purista Medium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Purista';
-  src: url('../fonts/Purista Medium Italic.otf') format('opentype');
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Purista';
-  src: url('../fonts/Purista Semibold.otf') format('opentype');
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Purista';
-  src: url('../fonts/Purista Semibold Italic.otf') format('opentype');
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Purista';
-  src: url('../fonts/Purista Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Purista';
-  src: url('../fonts/Purista Bold Italic.otf') format('opentype');
-  font-weight: 700;
-  font-style: italic;
-}
-
 body {
   margin: 0;
   font-family: 'Purista', sans-serif;
-}
-header nav ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  padding: 1.5rem;
-  justify-content: center;
   background: #fff;
-}
-header nav ul li a {
-  text-decoration: none;
   color: #000;
-  font-weight: 600;
 }
-.hero {
-  position: relative;
+header {
+  padding: 2rem;
   text-align: center;
 }
 .hero img {
   width: 100%;
+  display: block;
+}
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+img.full-width {
+  width: 100%;
   height: auto;
-  object-fit: cover;
 }
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 0 0 10px rgba(0,0,0,0.6);
+form label {
+  display: block;
+  margin-bottom: 1rem;
 }
-.hero-text h1 {
-  font-size: 3rem;
-  margin: 0;
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  font-family: inherit;
 }
-.hero-text p {
-  font-size: 1.25rem;
+button {
+  padding: 0.75rem 2rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 footer {
-  text-align: center;
+  background: #f0f0f0;
   padding: 2rem;
-  background: #eee;
+  text-align: center;
+  font-size: 0.9rem;
 }
