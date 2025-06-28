@@ -1,3 +1,8 @@
+/* ------------------------------
+   ATTRA Landing Page – styles.css
+   ------------------------------ */
+
+/* Base resets & typography */
 body {
   margin: 0;
   font-family: 'Purista', sans-serif;
@@ -11,34 +16,152 @@ img {
   display: block;
 }
 
+/* Utility */
 .full-width {
   width: 100%;
-  display: block;
-  max-width: 1440px; /* Ensures post‑hero images never exceed 1440px */
+  max-width: 1440px; /* post‑hero images never exceed 1440px */
   margin: 0 auto;
+  display: block;
 }
 
-/* ---------------- Hero Section ---------------- */
+/* ---------------- Header ---------------- */
+.main-header {
+  position: absolute; /* overlays the hero */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent; /* transparent so hero shows underneath */
+  z-index: 1000;
+  padding: 0.75rem 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px; /* keeps nav aligned to hero edges */
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+
+.nav-left a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  transition: opacity 0.2s ease;
+}
+
+.nav-left a:last-child {
+  margin-right: 0;
+}
+
+.nav-left a:hover {
+  opacity: 0.75;
+}
+
+.nav-right img {
+  height: 24px;
+}
+
+/* ---------------- Hero ---------------- */
 .hero {
-  width: 100%;
+  position: relative;
   text-align: center;
 }
 
-.hero img {
+.hero-img {
   width: 100%;
-  max-width: 1920px; /* Hero image capped at 1920px */
+  max-width: 1920px; /* hero capped at 1920px */
   margin: 0 auto;
   display: block;
 }
 
-/* ---------------- Contact Form ---------------- */
-.contact-form {
-  padding: 4rem 0;
-  background-color: #f7f7f7;
+.hero-title {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.25rem;
+  margin: 0;
+  pointer-events: none;
+}
+
+/* ---------------- Section Headings ---------------- */
+.section-title {
+  font-style: italic;
+  color: #30588f;
+  font-size: 1.5rem;
+  margin: 3rem 0 1.5rem;
+}
+
+/* ---------------- Because: cards ---------------- */
+.because {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
   text-align: center;
 }
 
-.form-container {
+.because-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 2px;
+}
+
+.because-card {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.9rem;
+  padding: 3rem 1rem;
+  text-transform: uppercase;
+}
+
+/* ---------------- Stones fan ---------------- */
+.stones-title {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.25);
+  text-align: right;
+  line-height: 1.1;
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* ---------------- Process grid ---------------- */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.process-step {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+/* ---------------- Contact ---------------- */
+.contact {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contact-form {
   max-width: 500px;
   margin: 0 auto;
 }
@@ -46,73 +169,47 @@ img {
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 0.75rem;
-  margin: 0.5rem 0;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  font-size: 0.9rem;
 }
 
 .contact-form button {
-  background-color: #000;
-  color: #fff;
-  padding: 0.75rem 2rem;
+  width: 100%;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  padding: 0.75rem 1rem;
+  background-color: #30588f;
+  color: #fff;
   font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.contact-form button:hover {
+  opacity: 0.85;
 }
 
 /* ---------------- Footer ---------------- */
-footer {
-  background: linear-gradient(#e0e6ef, #c8d1dd);
-  padding: 4rem 1rem;
+.main-footer {
+  background: linear-gradient(#c7d1db, #e7ecf2);
+  padding: 3rem 0;
+  font-size: 0.85rem;
 }
 
-.footer-inner {
-  max-width: 1440px;
-  margin: 0 auto;
+.footer-grid {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.footer-left {
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-.footer-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 0 1.5rem;
 }
 
 .footer-right img {
-  height: 24px;
-  margin-top: 0.5rem;
-}
-
-/* ---------------- WE ARE Gallery ---------------- */
-.we-are-gallery {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 4rem 1rem;
-}
-
-.we-are-gallery h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  display: block;
+  height: 20px;
+  margin-left: 1rem;
+  vertical-align: middle;
 }
