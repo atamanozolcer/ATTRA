@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ATTRA Natural Stones</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8">
+  <title>ATTRA - Natural Stones</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#weare">WE ARE</a></li>
-        <li><a href="#stones">STONES</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
+    <img src="images/logo.svg" alt="ATTRA logo" height="40">
   </header>
 
   <section class="hero">
-    <img src="images/hero/hero-image.jpg" alt="Crown your base" />
-    <div class="hero-text">
-      <h1>CROWN YOUR BASE</h1>
-      <p>+40 years of experience</p>
-    </div>
+    <img src="images/hero.png" alt="Crown the Ground">
+  </section>
+
+  <section>
+    <img src="images/why-attrra.png" alt="Why Attra" class="full-width">
+  </section>
+
+  <section>
+    <img src="images/reveal-stones.png" alt="Reveal Our Stones" class="full-width">
+  </section>
+
+  <section>
+    <img src="images/we-are-thumb.png" alt="We Are" class="full-width">
+  </section>
+
+  <section>
+    <img src="images/process.png" alt="Process" class="full-width">
+  </section>
+
+  <section>
+    <h2>Get in touch</h2>
+    <form name="contact" method="POST" data-netlify="true">
+      <label>
+        Name:
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Message:
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit">Send</button>
+    </form>
   </section>
 
   <footer>
