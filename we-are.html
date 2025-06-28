@@ -2,24 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ATTRA - We Are</title>
+  <title>We Are - ATTRA</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
-  <style>
-    .we-are-gallery .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2px;
-      max-width: 1440px;
-      margin: 0 auto;
-    }
-
-    .we-are-gallery img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
 </head>
 <body>
   <header class="main-header">
@@ -36,36 +22,27 @@
   </header>
 
   <section class="hero">
-    <img src="images/we-are/we-are-hero.png" alt="We Are Hero Image">
+    <img src="images/we-are-hero.png" alt="We Are Hero">
   </section>
 
   <section class="we-are-gallery">
+    <h2>We Are</h2>
     <div class="gallery">
-      <img src="images/we-are/gallery01.jpg" alt="Factory View 1">
-      <img src="images/we-are/gallery02.jpg" alt="Factory View 2">
-      <img src="images/we-are/gallery03.jpg" alt="Factory View 3">
-      <img src="images/we-are/gallery04.jpg" alt="Factory View 4">
-      <img src="images/we-are/gallery05.jpg" alt="Factory View 5">
-      <img src="images/we-are/gallery06.jpg" alt="Factory View 6">
-      <img src="images/we-are/gallery07.jpg" alt="Factory View 7">
-      <img src="images/we-are/gallery08.jpg" alt="Factory View 8">
-      <img src="images/we-are/gallery09.jpg" alt="Factory View 9">
-      <img src="images/we-are/gallery10.jpg" alt="Factory View 10">
-      <img src="images/we-are/gallery11.jpg" alt="Factory View 11">
-      <img src="images/we-are/gallery12.jpg" alt="Factory View 12">
-      <img src="images/we-are/gallery13.jpg" alt="Factory View 13">
-      <img src="images/we-are/gallery14.jpg" alt="Factory View 14">
-      <img src="images/we-are/gallery15.jpg" alt="Factory View 15">
-      <img src="images/we-are/gallery16.jpg" alt="Factory View 16">
-      <img src="images/we-are/gallery17.jpg" alt="Factory View 17">
-      <img src="images/we-are/gallery18.jpg" alt="Factory View 18">
-      <img src="images/we-are/gallery19.jpg" alt="Factory View 19">
+      <a href="images/we-are/gallery01.jpg" data-lightbox="we-are"><img src="images/we-are/gallery01.jpg" alt="Factory View 1"></a>
+      <a href="images/we-are/gallery02.jpg" data-lightbox="we-are"><img src="images/we-are/gallery02.jpg" alt="Factory View 2"></a>
+      <a href="images/we-are/gallery03.jpg" data-lightbox="we-are"><img src="images/we-are/gallery03.jpg" alt="Factory View 3"></a>
+      <a href="images/we-are/gallery04.jpg" data-lightbox="we-are"><img src="images/we-are/gallery04.jpg" alt="Factory View 4"></a>
+      <a href="images/we-are/gallery05.jpg" data-lightbox="we-are"><img src="images/we-are/gallery05.jpg" alt="Factory View 5"></a>
+      <a href="images/we-are/gallery06.jpg" data-lightbox="we-are"><img src="images/we-are/gallery06.jpg" alt="Factory View 6"></a>
+      <a href="images/we-are/gallery07.jpg" data-lightbox="we-are"><img src="images/we-are/gallery07.jpg" alt="Factory View 7"></a>
+      <a href="images/we-are/gallery08.jpg" data-lightbox="we-are"><img src="images/we-are/gallery08.jpg" alt="Factory View 8"></a>
+      <a href="images/we-are/gallery09.jpg" data-lightbox="we-are"><img src="images/we-are/gallery09.jpg" alt="Factory View 9"></a>
     </div>
   </section>
 
   <section class="contact-form" id="contact">
     <div class="form-container">
-      <h2>Let’s do business!</h2>
+      <h2>Let's do business!</h2>
       <form>
         <input type="text" name="name" placeholder="Name, Surname">
         <input type="email" name="email" placeholder="Email">
@@ -97,5 +74,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
 </html>
