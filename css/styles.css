@@ -1,7 +1,62 @@
 
+@font-face {
+  font-family: 'Purista';
+  src: url('../fonts/Purista Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Purista';
+  src: url('../fonts/Purista Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Purista';
+  src: url('../fonts/Purista Light Italic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Purista';
+  src: url('../fonts/Purista Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Purista';
+  src: url('../fonts/Purista Medium Italic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Purista';
+  src: url('../fonts/Purista Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Purista';
+  src: url('../fonts/Purista Semibold Italic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Purista';
+  src: url('../fonts/Purista Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Purista';
+  src: url('../fonts/Purista Bold Italic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Purista', sans-serif;
 }
 header nav ul {
   display: flex;
