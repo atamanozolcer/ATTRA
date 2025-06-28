@@ -14,6 +14,8 @@ img {
 .full-width {
   width: 100%;
   display: block;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .main-header {
