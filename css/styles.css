@@ -1,37 +1,72 @@
-
 body {
   margin: 0;
   font-family: 'Purista', sans-serif;
   background: #fff;
   color: #000;
 }
-header {
-  padding: 2rem;
-  text-align: center;
+
+/* HEADER */
+.main-header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-left a {
+  margin-right: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.nav-left a:hover {
+  text-decoration: underline;
+}
+
+.nav-right img {
+  height: 32px;
+}
+
+/* HERO */
 .hero img {
   width: 100%;
   display: block;
 }
+
 section {
   padding: 2rem;
   max-width: 1000px;
   margin: auto;
 }
+
 img.full-width {
   width: 100%;
   height: auto;
 }
+
+/* FORM */
 form label {
   display: block;
   margin-bottom: 1rem;
 }
+
 input, textarea {
   width: 100%;
   padding: 0.75rem;
   margin-top: 0.25rem;
   font-family: inherit;
+  border: 1px solid #ccc;
 }
+
 button {
   padding: 0.75rem 2rem;
   background: #000;
@@ -39,6 +74,7 @@ button {
   border: none;
   cursor: pointer;
 }
+
 footer {
   background: #f0f0f0;
   padding: 2rem;
