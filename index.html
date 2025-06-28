@@ -21,11 +21,11 @@
   </header>
 
   <section class="hero">
-    <img src="images/hero.png" alt="">
+    <img src="images/hero.png" alt="" class="full-width">
   </section>
 
   <section>
-    <img src="images/why-attrra.png" alt="Why Attra" class="full-width">
+    <img src="images/why-attra.png" alt="Why Attra" class="full-width">
   </section>
 
   <section>
@@ -40,27 +40,24 @@
     <img src="images/process.png" alt="Process" class="full-width">
   </section>
 
-  <section id="contact">
+  <section class="contact-form" id="contact">
     <h2>Get in touch</h2>
-    <form name="contact" method="POST" data-netlify="true">
-      <label>
-        Name:
-        <input type="text" name="name" required>
-      </label>
-      <label>
-        Email:
-        <input type="email" name="email" required>
-      </label>
-      <label>
-        Message:
-        <textarea name="message" rows="5" required></textarea>
-      </label>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
       <button type="submit">Send</button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 ATTRA. All rights reserved.</p>
+    © 2025 ATTRA. All rights reserved.
   </footer>
 </body>
 </html>
