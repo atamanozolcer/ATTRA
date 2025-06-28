@@ -1,91 +1,74 @@
-/* Global Styles */
-body {
-  margin: 0;
-  font-family: 'Purista', sans-serif;
-  background: #fff;
-  color: #000;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ATTRA - Natural Stones</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="main-header">
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="#we-are">WE ARE</a>
+        <a href="#stones">STONES</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+      <div class="nav-right">
+        <img src="images/logo.svg" alt="ATTRA Logo">
+      </div>
+    </nav>
+  </header>
 
-/* HEADER */
-.main-header {
-  background-color: transparent;
-  color: #fff;
-  padding: 1rem 2rem;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
+  <section class="hero">
+    <img src="images/hero.png" alt="">
+  </section>
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+  <section>
+    <img src="images/why-attra.png" alt="Why Attra" class="full-width">
+  </section>
 
-.nav-left a {
-  margin-right: 1.5rem;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-}
+  <section>
+    <img src="images/reveal-stones.png" alt="Reveal Our Stones" class="full-width">
+  </section>
 
-.nav-left a:hover {
-  text-decoration: underline;
-}
+  <section>
+    <img src="images/we-are-thumb.png" alt="We Are" class="full-width">
+  </section>
 
-.nav-right img {
-  height: 24px;
-}
+  <section>
+    <img src="images/process.png" alt="Process" class="full-width">
+  </section>
 
-/* Section full width images */
-.full-width {
-  width: 100%;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
+  <section class="contact-form" id="contact">
+    <h2>Get in touch</h2>
+    <form>
+      <input type="text" name="name" placeholder="Name">
+      <input type="email" name="email" placeholder="Email">
+      <textarea name="message" placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
-/* Form Section */
-.contact-form {
-  padding: 2rem;
-  background-color: #111;
-  color: #fff;
-  font-family: 'Purista', sans-serif;
-}
+  <footer>
+    <div class="footer-left">
+      <p><strong>Factory</strong><br>
+      Orta Mahalle OSB 18. Sok.<br>
+      Sarayköy Denizli 20400<br>
+      (On request, GPS details)</p>
 
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-}
+      <p><strong>Office</strong><br>
+      Kızıltoprak 17/12<br>
+      Alsancak, 35220, İzmir, Turkey</p>
 
-.contact-form button {
-  padding: 0.75rem 2rem;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.contact-form button:hover {
-  background-color: #444;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.8rem;
-  background-color: #222;
-  color: #aaa;
-}
+      <p>attra@attra.eu</p>
+    </div>
+    <div class="footer-right">
+      <img src="images/logo.svg" alt="Logo">
+      <img src="images/icon-instagram.svg" alt="Instagram">
+      <img src="images/icon-behance.svg" alt="Behance">
+      <img src="images/icon-linkedin.svg" alt="LinkedIn">
+    </div>
+  </footer>
+</body>
+</html>
