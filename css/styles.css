@@ -175,3 +175,39 @@ img {
 .gallery img:hover {
   transform: scale(1.02);
 }
+
+/* ----- WE ARE Intro Section ----- */
+.intro-section {
+  max-width: 1440px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  color: #fff;
+}
+
+.tagline {
+  font-size: 1.4rem;
+  text-align: center;
+  font-style: italic;
+  color: #ccc;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.image-side {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-side {
+  flex: 2;
+  min-width: 300px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
