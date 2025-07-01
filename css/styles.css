@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: 'Purista', sans-serif;
-  background-color: #fff;
-  color: #000;
+  background-color: #1e1e1e;
+  color: #fff;
   box-sizing: border-box;
 }
 
@@ -185,10 +185,22 @@ img {
 }
 
 .tagline {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: center;
-  font-style: italic;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
   color: #ccc;
+}
+
+.tagline .light {
+  font-weight: 300; /* Light */
+  font-family: 'Purista Light', sans-serif;
+}
+
+.tagline .bold {
+  font-weight: 700; /* Bold */
+  font-family: 'Purista Bold', sans-serif;
+  color: #fff;
 }
 
 .about-content {
@@ -206,8 +218,8 @@ img {
 .text-side {
   flex: 2;
   min-width: 300px;
-  line-height: 1.6;
-  font-size: 0.95rem;
+  line-height: 1.8;
+  font-size: 1.2rem;
   color: #ddd;
 }
 
