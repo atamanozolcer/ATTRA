@@ -212,10 +212,22 @@ body {
 
 
 .tagline {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: center;
+  margin: 3rem auto;
   font-style: italic;
-  color: #ccc;
+  max-width: 900px;
+  color: #fff;
+}
+
+.tagline .light {
+  font-weight: 300;
+  font-family: 'Purista Light', sans-serif;
+}
+
+.tagline .bold {
+  font-weight: 700;
+  font-family: 'Purista Bold', sans-serif;
 }
 
 .about-content {
