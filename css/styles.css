@@ -222,13 +222,12 @@ body {
   color: #fff;
 }
 
-.tagline .light {
+.tagline .light-italic {
   font-weight: 300;
   font-family: 'Purista Light', sans-serif;
 }
 
 .tagline .bold-italic {
-  font-family: 'Purista Bold Italic', sans-serif;
   font-weight: 700;
   font-style: italic;
 }
