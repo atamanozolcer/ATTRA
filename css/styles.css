@@ -197,6 +197,7 @@ body {
 }
 
 .intro-grid {
+  max-width: 1440px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem; /* yaklaşık 1 cm */
