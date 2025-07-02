@@ -219,6 +219,7 @@ body {
   margin-top: 4rem;   
   margin-bottom: 4rem; 
   font-style: italic;
+  margin: 0 auto
   max-width: 900px;
   color: #fff;
 }
@@ -252,8 +253,4 @@ body {
   line-height: 1.8;
   font-size: 1.2rem;
   color: #ddd;
-}
-
-.slogan-section {
-  padding: 4rem 0;
 }
