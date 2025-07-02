@@ -216,11 +216,13 @@ body {
 .tagline {
   font-size: 3rem;
   text-align: center;
-  margin: 1rem auto;
+  margin-top: 4rem;   
+  margin-bottom: 4rem; 
   font-style: italic;
   max-width: 900px;
   color: #fff;
 }
+
 
 .tagline .light-italic {
   font-weight: 300;
@@ -252,3 +254,6 @@ body {
   color: #ddd;
 }
 
+.slogan-section {
+  padding: 4rem 0;
+}
