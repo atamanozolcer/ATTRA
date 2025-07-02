@@ -233,6 +233,13 @@ body {
   font-style: italic;
 }
 
+.bold-italic {
+  font-family: 'Purista Bold Italic', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
 
 .about-content {
   display: flex;
