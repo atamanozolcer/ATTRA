@@ -5,7 +5,6 @@
   <title>ATTRA - Natural Stones</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
@@ -22,28 +21,28 @@
   </header>
 
   <section class="hero">
-    <img src="images/hero.png" alt="Crown the Ground" data-aos="fade" data-aos-duration="1500">
+    <img src="images/hero.png" alt="Crown the Ground">
   </section>
 
   <section>
-    <img src="images/why-attra.png" alt="Why Attra" class="full-width" data-aos="fade-up">
+    <img src="images/why-attra.png" alt="Why Attra" class="full-width">
   </section>
 
   <section>
-    <img src="images/reveal-stones.png" alt="Reveal Our Stones" class="full-width" data-aos="fade-up">
+    <img src="images/reveal-stones.png" alt="Reveal Our Stones" class="full-width">
   </section>
 
   <section>
-    <img src="images/process.png" alt="Process" class="full-width" data-aos="fade-up">
+    <img src="images/process.png" alt="Process" class="full-width">
   </section>
 
   <section>
     <a href="we-are.html">
-      <img src="images/we-are-thumb.png" alt="We Are" class="full-width" data-aos="fade-up">
+      <img src="images/we-are-thumb.png" alt="We Are" class="full-width">
     </a>
   </section>
 
-   <section class="contact-form" id="contact" data-aos="fade-up">
+  <section class="contact-form" id="contact">
     <div class="form-container">
       <h2>Get in touch</h2>
       <form>
@@ -61,7 +60,7 @@
         <p><strong>Factory</strong><br><br>
         Kemalpaşa OSB Mah.<br>
         Güney Sanayi Cad. 25<br>
-	Kemalpaşa, 35730, İzmir, Türkiye</p>
+        Kemalpaşa, 35730, İzmir, Türkiye</p>
 
         <p><strong>Office</strong><br><br>
         Kızıltoprak 17/12<br>
@@ -78,7 +77,31 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init({ duration: 1000, easing: 'ease-out', once: true });</script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".hero img", {
+      opacity: 0,
+      y: 40,
+      duration: 1.5,
+      ease: "power2.out"
+    });
+
+    gsap.utils.toArray(".full-width").forEach((el) => {
+      gsap.from(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: "top 85%",
+          toggleActions: "play none none none"
+        },
+        opacity: 0,
+        y: 30,
+        duration: 1.2,
+        ease: "power2.out"
+      });
+    });
+  </script>
 </body>
 </html>
