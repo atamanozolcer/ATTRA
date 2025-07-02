@@ -196,6 +196,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 1rem; /* yaklaşık 1 cm */
   align-items: start;
+  margin: 0 auto
 }
 
 .intro-image img {
