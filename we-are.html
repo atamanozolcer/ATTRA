@@ -1,144 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>We Are - ATTRA</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATTRA Landing</title>
+  <style>
+    @font-face {
+      font-family: 'Purista Light';
+      src: url('fonts/purista-light.otf') format('opentype');
+      font-weight: 300;
+    }
+
+    @font-face {
+      font-family: 'Purista Bold Italic';
+      src: url('fonts/purista-bold-italic.otf') format('opentype');
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: white;
+      font-family: sans-serif;
+    }
+
+    .hero {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .tagline-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 1rem;
+    }
+
+    .tagline {
+      font-size: 3rem;
+      text-align: center;
+      max-width: 900px;
+      color: #fff;
+      font-style: italic;
+      margin: 0 auto;
+    }
+
+    .tagline .light {
+      font-weight: 300;
+      font-family: 'Purista Light', sans-serif;
+    }
+
+    .tagline .bold {
+      font-weight: 700;
+      font-family: 'Purista Bold Italic', sans-serif;
+    }
+
+    .below-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1cm;
+      margin: 4rem auto;
+      max-width: 1200px;
+      padding: 0 1rem;
+    }
+
+    .below-section img {
+      width: 48%;
+      height: auto;
+    }
+
+    .below-section .text {
+      width: 48%;
+      font-size: 1.3rem;
+    }
+
+    .gallery img {
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
+  </style>
 </head>
 <body>
-  <header class="main-header">
-    <nav class="navbar">
-      <div class="nav-left">
-        <a href="index.html">HOME</a>
-        <a href="stones.html">STONES</a>
-        <a href="#contact">CONTACT</a>
-      </div>
-      <div class="nav-right">
-        <img src="images/logo.svg" alt="ATTRA Logo">
-      </div>
-    </nav>
-  </header>
-
   <section class="hero">
-    <img src="images/we-are/we-are-hero.png" alt="We Are Hero">
+    <img src="hero.jpg" alt="Hero Image" />
   </section>
 
- <section class="tagline">
-  <div class="tagline">
-    <span class="light-italic">We cut, We finish, We deliver.</span>
-    <span class="bold-italic"> On time, every time.</span>
+  <section class="tagline-section">
+    <div class="tagline">
+      <span class="light">We cut, We finish, We deliver. </span>
+      <span class="bold">On time, every time.</span>
+    </div>
+  </section>
+
+  <div class="below-section">
+    <img src="next-image.jpg" alt="Stone Sample" />
+    <div class="text">
+      <p>This is the text that explains the quality and origin of our natural stones.</p>
+    </div>
   </div>
-</section>
-
-
-    <div class="intro-grid">
-      <div class="intro-image">
-        <img src="images/we-are/gallery08.jpg" alt="Production Overview">
-      </div>
-      <div class="intro-text">
-        <p>
-          We produce and supply natural stone — marble, travertine, limestone — for wholesale distributors around the world.<br><br>
-          Backed by decades of experience and a modern production setup, we shape stone for reliable, large-scale supply.<br><br>
-          Our surfaces are available in over 10 finishings: honed, brushed, bush-hammered, flamed, deep-flamed, sandblasted, tumbled, polished, sea-washed, and custom combinations.<br><br>
-          We are able to deliver surfaces with thicknesses as low as 1 cm — a level of precision few suppliers can offer.<br><br>
-          We ship worldwide — consistently and fast — powered by our logistics partner MTS. In many cases, delivery to Central Europe takes as little as 2–3 days.<br><br>
-          Let’s do business.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="we-are-gallery">
-    <div class="gallery">
-      <a href="images/we-are/gallery01.jpg" data-lightbox="we-are"><img src="images/we-are/gallery01.jpg" alt="Factory View 1"></a>
-      <a href="images/we-are/gallery02.jpg" data-lightbox="we-are"><img src="images/we-are/gallery02.jpg" alt="Factory View 2"></a>
-      <a href="images/we-are/gallery03.jpg" data-lightbox="we-are"><img src="images/we-are/gallery03.jpg" alt="Factory View 3"></a>
-      <a href="images/we-are/gallery04.jpg" data-lightbox="we-are"><img src="images/we-are/gallery04.jpg" alt="Factory View 4"></a>
-      <a href="images/we-are/gallery05.jpg" data-lightbox="we-are"><img src="images/we-are/gallery05.jpg" alt="Factory View 5"></a>
-      <a href="images/we-are/gallery06.jpg" data-lightbox="we-are"><img src="images/we-are/gallery06.jpg" alt="Factory View 6"></a>
-      <a href="images/we-are/gallery07.jpg" data-lightbox="we-are"><img src="images/we-are/gallery07.jpg" alt="Factory View 7"></a>
-      <a href="images/we-are/gallery08.jpg" data-lightbox="we-are"><img src="images/we-are/gallery08.jpg" alt="Factory View 8"></a>
-      <a href="images/we-are/gallery09.jpg" data-lightbox="we-are"><img src="images/we-are/gallery09.jpg" alt="Factory View 9"></a>
-    </div>
-  </section>
-
-  <section class="contact-form" id="contact">
-    <div class="form-container">
-      <h2>Let's do business!</h2>
-      <form>
-        <input type="text" name="name" placeholder="Name, Surname">
-        <input type="email" name="email" placeholder="Email">
-        <textarea name="message" placeholder="Message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="footer-container">
-      <div class="footer-left">
-        <p><strong>Factory</strong><br><br>
-        Kemalpaşa OSB MAh.<br>
-        Güney Sanayi Cad. 25<br>
-        Kemalpaşa, 35730, İzmir, Türkiye<br>
-        (On request, GPS details)</p>
-
-        <p><strong>Office</strong><br><br>
-        Kızıltoprak 17/12<br>
-        Alsancak, 35220, İzmir, Turkey</p>
-
-        <p>attra@attra.eu</p>
-      </div>
-      <div class="footer-right">
-        <img src="images/logo.svg" alt="Logo">
-        <img src="images/icon-instagram.svg" alt="Instagram">
-        <img src="images/icon-behance.svg" alt="Behance">
-        <img src="images/icon-linkedin.svg" alt="LinkedIn">
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.from(".hero img", {
-      opacity: 0,
-      y: 40,
-      duration: 1.5,
-      ease: "power2.out"
-    });
-
-    gsap.from(".tagline", {
-      scrollTrigger: {
-        trigger: ".tagline",
-        start: "top 85%",
-        toggleActions: "play none none none"
-      },
-      opacity: 0,
-      y: 30,
-      duration: 1.2,
-      ease: "power2.out"
-    });
-
-    gsap.utils.toArray(".intro-image img, .intro-text p, .gallery img").forEach((el) => {
-      gsap.from(el, {
-        scrollTrigger: {
-          trigger: el,
-          start: "top 85%",
-          toggleActions: "play none none none"
-        },
-        opacity: 0,
-        y: 30,
-        duration: 1,
-        ease: "power2.out"
-      });
-    });
-  </script>
 </body>
 </html>
