@@ -227,10 +227,12 @@ body {
   font-family: 'Purista Light', sans-serif;
 }
 
-.tagline .bold {
+.tagline .bold-italic {
+  font-family: 'Purista Bold Italic', sans-serif;
   font-weight: 700;
-  font-family: 'Purista Bold', sans-serif;
+  font-style: italic;
 }
+
 
 .about-content {
   display: flex;
