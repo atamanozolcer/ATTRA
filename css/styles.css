@@ -216,7 +216,7 @@ body {
 .tagline {
   font-size: 3rem;
   text-align: center;
-  margin: 3rem auto;
+  margin: 0rem auto;
   font-style: italic;
   max-width: 900px;
   color: #fff;
