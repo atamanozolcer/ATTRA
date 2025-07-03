@@ -57,7 +57,9 @@ img {
 
 .nav-right img {
   height: 32px;
+  width: auto;
 }
+
 
 .hero {
   display: flex;
