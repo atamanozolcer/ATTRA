@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <style>
+    @keyframes zoomIn {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.05); }
+    }
     @font-face {
       font-family: 'Purista Thin';
       src: url('fonts/Purista Thin.otf') format('opentype');
@@ -16,6 +20,12 @@
       font-family: 'Purista Bold';
       src: url('fonts/Purista Bold.otf') format('opentype');
       font-weight: 700;
+    }
+
+    @font-face {
+      font-family: 'Purista Medium';
+      src: url('fonts/Purista Medium.otf') format('opentype');
+      font-weight: 500;
     }
     .tagline-2 {
       font-size: 2.4rem;
@@ -36,7 +46,58 @@
       font-family: 'Purista Bold', sans-serif;
       font-weight: 700;
     }
-  </style>
+      .stone-grid a {
+      position: relative;
+      overflow: hidden;
+      display: block;
+    }
+
+    .stone-grid a img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+      display: block;
+    }
+
+    .stone-grid a:hover img {
+      transform: scale(1.05);
+    }
+
+    .stone-label {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      pointer-events: none;
+      transition: color 0.3s ease, opacity 0.3s ease;
+    }
+
+    .stone-label .code {
+      font-family: 'Purista Bold', sans-serif;
+      font-size: 3rem;
+      color: rgba(255, 255, 255, 0.3);
+      text-transform: uppercase;
+      display: block;
+    }
+
+    .stone-label .word {
+      font-family: 'Purista Medium', sans-serif;
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.3);
+      text-transform: lowercase;
+      display: block;
+    }
+
+    .stone-grid a:hover .stone-label .code,
+    .stone-grid a:hover .stone-label .word {
+      color: rgba(30, 60, 90, 0.8);
+    }
+
+    .stone-grid a:hover .stone-name {
+      color: rgba(30, 60, 90, 0.8);
+    }
+
 </head>
 <body>
   <header class="main-header">
@@ -69,17 +130,41 @@
   margin: 1rem auto 0 auto;
   padding: 0 1rem;
 ">
-  <a href="a-stone.html"><img src="images/stones/a-stone-001.png" alt="A Stone"></a>
-  <a href="b-stone.html"><img src="images/stones/b-stone-001.png" alt="B Stone"></a>
-  <a href="c-stone.html"><img src="images/stones/c-stone-001.png" alt="C Stone"></a>
-  <a href="j-stone.html"><img src="images/stones/j-stone-001.png" alt="J Stone"></a>
-  <a href="r-stone.html"><img src="images/stones/r-stone-001.png" alt="R Stone"></a>
-  <a href="s-stone.html"><img src="images/stones/s-stone-001.png" alt="S Stone"></a>
-  <a href="tc-stone.html"><img src="images/stones/tc-stone-001.png" alt="TC Stone"></a>
-  <a href="tv-stone.html"><img src="images/stones/tv-stone-001.png" alt="TV Stone"></a>
+  <a href="a-stone.html">
+    <img src="images/stones/a-stone-001.png" alt="A Stone">
+    <div class="stone-label"><span class="code">A</span><span class="word">stone</span></div>
+  </a>
+  <a href="b-stone.html">
+    <img src="images/stones/b-stone-001.png" alt="B Stone">
+    <div class="stone-label"><span class="code">B</span><span class="word">stone</span></div>
+  </a>
+  <a href="c-stone.html">
+    <img src="images/stones/c-stone-001.png" alt="C Stone">
+    <div class="stone-label"><span class="code">C</span><span class="word">stone</span></div>
+  </a>
+  <a href="j-stone.html">
+    <img src="images/stones/j-stone-001.png" alt="J Stone">
+    <div class="stone-label"><span class="code">J</span><span class="word">stone</span></div>
+  </a>
+  <a href="r-stone.html">
+    <img src="images/stones/r-stone-001.png" alt="R Stone">
+    <div class="stone-label"><span class="code">R</span><span class="word">stone</span></div>
+  </a>
+  <a href="s-stone.html">
+    <img src="images/stones/s-stone-001.png" alt="S Stone">
+    <div class="stone-label"><span class="code">S</span><span class="word">stone</span></div>
+  </a>
+  <a href="tc-stone.html">
+    <img src="images/stones/tc-stone-001.png" alt="TC Stone">
+    <div class="stone-label"><span class="code">TC</span><span class="word">stone</span></div>
+  </a>
+  <a href="tv-stone.html">
+    <img src="images/stones/tv-stone-001.png" alt="TV Stone">
+    <div class="stone-label"><span class="code">TV</span><span class="word">stone</span></div>
+  </a>
 </section>
 
-    <h2 class="tagline-2">
+    <h2 class="tagline-2" style="font-size: 4.8rem;">
   <span class="thin">ALL</span> <span class="bold">FINISHINGS</span>
 </h2>
 
