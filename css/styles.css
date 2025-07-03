@@ -284,3 +284,18 @@ body {
   font-size: 1.2rem;
   color: #ddd;
 }
+
+
+.contact-form h2.contact-heading {
+  font-family: 'Purista Medium', sans-serif;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  display: inline-block;
+  color: invert;
+  mix-blend-mode: difference;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
