@@ -46,7 +46,7 @@
       font-family: 'Purista Bold', sans-serif;
       font-weight: 700;
     }
-      .stone-grid a {
+    .stone-grid a {
       position: relative;
       overflow: hidden;
       display: block;
@@ -70,7 +70,10 @@
       transform: translate(-50%, -50%);
       text-align: center;
       pointer-events: none;
-      gap: 0.01rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.1em;
       transition: color 0.3s ease, opacity 0.3s ease;
     }
 
@@ -80,12 +83,12 @@
       color: rgba(255, 255, 255, 0.1);
       text-transform: uppercase;
       display: block;
-      margin-bottom: -1rem
+      margin-bottom: -2.5rem;
     }
 
     .stone-label .word {
       font-family: 'Purista Medium', sans-serif;
-      font-size: 2rem;
+      font-size: 4rem;
       color: rgba(255, 255, 255, 0.1);
       text-transform: lowercase;
       display: block;
@@ -99,8 +102,14 @@
     .stone-grid a:hover .stone-name {
       color: rgba(30, 60, 90, 0.8);
     }
-  </style>
 
+    .catalog-download {
+      max-width: 1920px;
+      margin: 6rem auto 2rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <header class="main-header">
@@ -119,18 +128,6 @@
   </header>
 
   <main class="stone-main">
-   <div class="catalog-download" style="display: flex; justify-content: center; align-items: center; z-index: 2; position: relative;">
-  <a href="catalog.pdf" download style="display: inline-block;">
-    <img src="images/buttons/download-button-001.png"
-         onmouseover="this.src='images/buttons/download-button-002.png'"
-         onmouseout="this.src='images/buttons/download-button-001.png'"
-         alt="Download Catalog"
-         style="max-width: 100%; height: auto;">
-        
-
-  </a>
-</div>
-
     <section class="stone-grid" style="
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -171,13 +168,21 @@
     <img src="images/stones/tv-stone-001.png" alt="TV Stone">
     <div class="stone-label"><span class="code">TV</span><span class="word">stone</span></div>
   </a>
-</section>
+$1<div class="catalog-download" style="display: flex; justify-content: center; align-items: center; z-index: 2; position: relative; margin-top: 2rem;">
+  <a href="catalog.pdf" download style="display: inline-block;">
+    <img src="images/buttons/download-button-001.png"
+         onmouseover="this.src='images/buttons/download-button-002.png'"
+         onmouseout="this.src='images/buttons/download-button-001.png'"
+         alt="Download Catalog"
+         style="max-width: 100%; height: auto;">
+  </a>
+</div>
 
-    <h2 class="tagline-2" style="font-size: 4.8rem;">
-  <span class="thin">ALL</span> <span class="bold">FINISHINGS</span>
-</h2>
+<h2 class="tagline-2" style="font-size: 4.8rem;">
+      <span class="thin">ALL</span> <span class="bold">FINISHINGS</span>
+    </h2>
 
-<section class="contact-form" id="contact">
+    <section class="contact-form" id="contact">
       <div class="form-container">
         <h2>Need help choosing?</h2>
         <form>
