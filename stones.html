@@ -80,7 +80,7 @@
       color: rgba(255, 255, 255, 0.1);
       text-transform: uppercase;
       display: block;
-      margin-bottom: -1em
+      margin-bottom: -1rem
     }
 
     .stone-label .word {
@@ -119,12 +119,15 @@
   </header>
 
   <main class="stone-main">
-    <div class="catalog-download">
-  <a href="catalog.pdf" download>
-    <img src="images/buttons/download-button-001.png" 
-         onmouseover="this.src='images/buttons/download-button-002.png'" 
-         onmouseout="this.src='images/buttons/download-button-001.png'" 
-         alt="Download Catalog">
+   <div class="catalog-download" style="display: flex; justify-content: center; align-items: center; z-index: 2; position: relative;">
+  <a href="catalog.pdf" download style="display: inline-block;">
+    <img src="images/buttons/download-button-001.png"
+         onmouseover="this.src='images/buttons/download-button-002.png'"
+         onmouseout="this.src='images/buttons/download-button-001.png'"
+         alt="Download Catalog"
+         style="max-width: 100%; height: auto;">
+        
+
   </a>
 </div>
 
