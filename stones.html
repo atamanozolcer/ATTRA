@@ -64,31 +64,36 @@
     }
 
     .stone-label {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      pointer-events: none;
-      gap: 0.1rem;
-      transition: color 0.3s ease, opacity 0.3s ease;
-    }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.05em;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
 
+    1.8rem
+  }
+
+  @media (min-width: 768px) {
     .stone-label .code {
-      font-family: 'Purista Bold', sans-serif;
-      font-size: 12rem;
-      color: rgba(255, 255, 255, 0.1);
-      text-transform: uppercase;
-      display: block;
+      font-size: 3rem;
     }
+  }
 
+    1rem
+  }
+
+  @media (min-width: 768px) {
     .stone-label .word {
-      font-family: 'Purista Medium', sans-serif;
-      font-size: 4rem;
-      color: rgba(255, 255, 255, 0.1);
-      text-transform: lowercase;
-      display: block;
+      font-size: 1.2rem;
     }
+  }
 
     .stone-grid a:hover .stone-label .code,
     .stone-grid a:hover .stone-label .word {
