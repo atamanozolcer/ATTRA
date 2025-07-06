@@ -299,3 +299,28 @@ body {
   padding: 0;
   border-radius: 0;
 }
+
+.why-attra-grid {
+  max-width: 1440px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.grid-item img,
+.grid-wide img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+/* Frame 7 - wide */
+.grid-wide {
+  grid-column: span 2;
+  grid-column-start: 3;
+}
