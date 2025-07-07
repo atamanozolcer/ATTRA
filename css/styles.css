@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Purista Thin';
+  src: url('../fonts/Purista Thin.otf') format('opentype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Purista Light';
+  src: url('../fonts/Purista Light.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Purista Medium';
+  src: url('../fonts/Purista Medium.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Purista Bold';
+  src: url('../fonts/Purista Bold.otf') format('opentype');
+  font-weight: 700;
+}
+
 body {
   margin: 0;
   font-family: 'Purista', sans-serif;
