@@ -351,3 +351,17 @@ body {
   transform: scale(1.05);
   filter: brightness(1.05);
 }
+
+.stone-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+}
+
+.stone-divider img {
+  max-width: 100%;
+  width: 600px; /* isteğe göre: 400px - 800px arası ideal */
+  height: auto;
+  display: block;
+}
