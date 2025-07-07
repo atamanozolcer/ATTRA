@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: 'Purista', sans-serif;
-  background-color: #fff;
-  color: #000;
+  background-color: #393939;
+  color: #fff;
   box-sizing: border-box;
 }
 
@@ -196,11 +196,6 @@ section {
   transform: scale(1.05);
 }
 
-body {
-  background-color: #393939;
-  color: #fff;
-}
-
 .intro-section {
   max-width: 1440px;
   margin: 0 auto;
@@ -369,4 +364,60 @@ body {
   max-width: 100%;
   height: auto;
   display: inline-block;
+}
+
+/* STONE PAGE STRUCTURE */
+
+.stone-header-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1440px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.stone-header-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.stone-header-text h1 {
+  font-family: 'Purista Bold', sans-serif;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.stone-header-text p {
+  color: #ccc;
+  font-family: 'Purista Medium', sans-serif;
+  font-size: 1.2rem;
+}
+
+.stone-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+}
+
+.stone-carousel img {
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+.stone-technical-image {
+  display: flex;
+  justify-content: center;
+  margin: 4rem auto;
+}
+
+.stone-technical-image img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
 }
