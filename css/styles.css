@@ -337,3 +337,7 @@ body {
   grid-column-start: 3;
   grid-column-end: 5;
 }
+
+.stone-grid a img {
+  border-radius: 10px;
+}
