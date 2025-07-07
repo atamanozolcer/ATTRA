@@ -31,16 +31,24 @@
     </div>
   </section>
 
-  <section class="stone-carousel">
-    <img src="images/stones/a-stone/a-002.jpg" alt="A Stone View 1">
-    <img src="images/stones/a-stone/a-003.jpg" alt="A Stone View 2">
-    <img src="images/stones/a-stone/a-004.jpg" alt="A Stone View 3">
-    <img src="images/stones/a-stone/a-005.jpg" alt="A Stone View 4">
-    <img src="images/stones/a-stone/a-006.jpg" alt="A Stone View 5">
-    <img src="images/stones/a-stone/a-007.jpg" alt="A Stone View 6">
-    <img src="images/stones/a-stone/a-008.jpg" alt="A Stone View 7">
-    <img src="images/stones/a-stone/a-009.jpg" alt="A Stone View 8">
-  </section>
+  <div class="stone-carousel-wrapper">
+    <section class="stone-carousel">
+      <img src="images/stones/a-stone/a-002.jpg" alt="A Stone View 1">
+      <img src="images/stones/a-stone/a-003.jpg" alt="A Stone View 2">
+      <img src="images/stones/a-stone/a-004.jpg" alt="A Stone View 3">
+      <img src="images/stones/a-stone/a-005.jpg" alt="A Stone View 4">
+      <img src="images/stones/a-stone/a-006.jpg" alt="A Stone View 5">
+      <img src="images/stones/a-stone/a-007.jpg" alt="A Stone View 6">
+      <img src="images/stones/a-stone/a-008.jpg" alt="A Stone View 7">
+      <img src="images/stones/a-stone/a-009.jpg" alt="A Stone View 8">
+    </section>
+  </div>
+
+  <!-- Lightbox HTML -->
+  <div class="lightbox-overlay" id="lightbox">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="" alt="Zoomed Image">
+  </div>
 
   <section class="stone-technical-image">
     <img src="images/stones/a-stone/a-stone-chart.png" alt="A Stone Sizes and Finishes">
@@ -93,6 +101,21 @@
         header.classList.remove("scrolled");
       }
     });
+
+    // Lightbox functionality
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    document.querySelectorAll('.stone-carousel img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.add('visible');
+      });
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('visible');
+    }
   </script>
 </body>
 </html>
