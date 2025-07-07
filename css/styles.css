@@ -349,6 +349,12 @@ section {
   grid-column-end: 5;
 }
 
+.stone-grid a img {
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .stone-grid a:hover img {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
