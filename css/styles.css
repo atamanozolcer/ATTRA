@@ -361,7 +361,7 @@ body {
 
 .stone-divider img {
   max-width: 100%;
-  width: 600px; /* isteğe göre: 400px - 800px arası ideal */
+  width: 600px;
   height: auto;
   display: block;
 }
