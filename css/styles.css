@@ -341,3 +341,13 @@ body {
 .stone-grid a img {
   border-radius: 10px;
 }
+
+.we-are-gallery .gallery a img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+  will-change: transform;
+}
+
+.we-are-gallery .gallery a:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
