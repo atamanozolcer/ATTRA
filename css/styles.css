@@ -36,10 +36,9 @@ img {
 
 header.scrolled {
   backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.4); /* Yarı saydam koyu ton */
+  background-color: rgba(0, 0, 0, 0.4);
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
-
 
 .navbar {
   display: flex;
@@ -67,12 +66,11 @@ header.scrolled {
   width: auto;
 }
 
-
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -80px
+  margin-top: -80px;
   margin-bottom: 0rem;
 }
 
@@ -124,7 +122,7 @@ section {
 }
 
 .site-footer {
-  background: none
+  background: none;
   padding: 4rem 1rem;
   color: #000;
   display: flex;
@@ -175,23 +173,28 @@ section {
 }
 
 .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.gallery-item {
   display: block;
   aspect-ratio: 1 / 1;
   overflow: hidden;
 }
 
-.gallery img {
+.gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
+  display: block;
 }
 
-.gallery:hover img {
+.gallery-item:hover img {
   transform: scale(1.05);
 }
-
-/* ----- WE ARE Intro Section ----- */
 
 body {
   background-color: #1e1e1e;
@@ -208,9 +211,9 @@ body {
   max-width: 1440px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem; /* yaklaşık 1 cm */
+  gap: 1rem;
   align-items: start;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .intro-image img {
@@ -227,18 +230,16 @@ body {
   font-family: 'Purista', sans-serif;
 }
 
-
 .tagline {
   font-size: 3rem;
   text-align: center;
-  margin-top: 4rem;   
-  margin-bottom: 4rem; 
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   font-style: italic;
-  margin: 0 auto
+  margin: 0 auto;
   max-width: 900px;
   color: #fff;
 }
-
 
 .tagline .light-italic {
   font-weight: 300;
@@ -257,7 +258,7 @@ body {
   text-transform: uppercase;
   margin: 4rem auto 2rem;
   letter-spacing: 0.06em;
-  color: #fff; /* veya sayfa tasarımına göre siyah */
+  color: #fff;
 }
 
 .tagline-2 .thin {
@@ -269,7 +270,6 @@ body {
   font-family: 'Purista Bold', sans-serif;
   font-weight: 700;
 }
-
 
 .about-content {
   display: flex;
@@ -290,7 +290,6 @@ body {
   font-size: 1.2rem;
   color: #ddd;
 }
-
 
 .contact-form h2.contact-heading {
   font-family: 'Purista Medium', sans-serif;
@@ -325,7 +324,6 @@ body {
   border-radius: 4px;
 }
 
-/* Frame 7 - wide */
 .grid-wide {
   grid-column: 3 / span 2;
   grid-column-start: 3;
@@ -372,7 +370,3 @@ body {
   height: auto;
   display: inline-block;
 }
-
-
-
-

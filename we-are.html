@@ -7,31 +7,6 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <style>
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2px;
-    }
-
-    .gallery-item {
-      display: block;
-      aspect-ratio: 1 / 1;
-      overflow: hidden;
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.4s ease;
-      display: block;
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.05);
-    }
-  </style>
 </head>
 <body>
   <header class="main-header">
@@ -170,7 +145,7 @@
       ease: "power2.out"
     });
 
-    gsap.utils.toArray(".intro-image img, .intro-text p, .gallery img").forEach((el) => {
+    gsap.utils.toArray(".intro-image img, .intro-text p, .gallery-item img").forEach((el) => {
       gsap.from(el, {
         scrollTrigger: {
           trigger: el,
@@ -195,6 +170,5 @@
       }
     });
   </script>
-
 </body>
 </html>
