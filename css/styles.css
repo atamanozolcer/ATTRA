@@ -191,11 +191,6 @@ section {
   padding: 4rem 1rem;
 }
 
-.we-are-gallery h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
