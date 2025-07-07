@@ -354,13 +354,18 @@ body {
   display: block;
 }
 
-.hover-zoom-link img {
+.hover-zoom {
   transition: transform 0.4s ease;
 }
 
-.hover-zoom-link:hover img {
-  transform: scale(1.03);
+.hover-zoom:hover {
+  transform: scale(1.05);
 }
+
+.centered-img-link:hover .hover-zoom {
+  transform: scale(1.05);
+}
+
 
 
 .gallery-thumb {
@@ -377,9 +382,10 @@ body {
   transition: transform 0.4s ease;
 }
 
-.gallery a:hover .gallery-thumb img {
+.gallery-thumb:hover img {
   transform: scale(1.05);
 }
+
 
 .centered-img-link {
   display: block;
