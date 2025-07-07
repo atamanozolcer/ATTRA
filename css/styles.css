@@ -377,6 +377,8 @@ section {
 
 .hover-zoom {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: block;
+  border-radius: 10px;
 }
 
 .hover-zoom:hover {
