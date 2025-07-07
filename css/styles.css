@@ -397,8 +397,7 @@ body {
 
 .gallery-test {
   display: block;
-  width: 300px;
-  margin: 2rem auto;
+  width: 100%;
   aspect-ratio: 1/1;
   overflow: hidden;
 }
@@ -416,5 +415,6 @@ body {
 }
 
 .gallery-test:hover .thumb img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
+

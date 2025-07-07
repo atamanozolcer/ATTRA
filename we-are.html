@@ -7,6 +7,31 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+
+    .gallery-item {
+      display: block;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+      display: block;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
   <header class="main-header">
@@ -29,87 +54,60 @@
     <img src="images/we-are/we-are-hero.png" alt="We Are Hero">
   </section>
 
- <section class="tagline">
-  <div class="tagline">
-    <span class="light-italic">We cut, We finish, We deliver.</span>
-    <span class="bold-italic"> On time, every time.</span>
-  </div>
-</section>
-
-
-    <div class="intro-grid">
-      <div class="intro-image">
-        <img src="images/we-are/gallery08.jpg" alt="Production Overview">
-      </div>
-      <div class="intro-text">
-        <p>
-          We produce and supply natural stone — marble, travertine, limestone — for wholesale distributors around the world.<br><br>
-          Backed by decades of experience and a modern production setup, we shape stone for reliable, large-scale supply.<br><br>
-          Our surfaces are available in over 10 finishings: honed, brushed, bush-hammered, flamed, deep-flamed, sandblasted, tumbled, polished, sea-washed, and custom combinations.<br><br>
-          We are able to deliver surfaces with thicknesses as low as 1 cm — a level of precision few suppliers can offer.<br><br>
-          We ship worldwide — consistently and fast — powered by our logistics partner MTS. In many cases, delivery to Central Europe takes as little as 2–3 days.<br><br>
-          Let’s do business.
-        </p>
-      </div>
+  <section class="tagline">
+    <div class="tagline">
+      <span class="light-italic">We cut, We finish, We deliver.</span>
+      <span class="bold-italic"> On time, every time.</span>
     </div>
   </section>
 
-    <section class="we-are-gallery">
-  <div class="gallery">
-    <a href="images/we-are/gallery01.jpg" data-lightbox="we-are">
-      <div class="gallery-thumb">
+  <div class="intro-grid">
+    <div class="intro-image">
+      <img src="images/we-are/gallery08.jpg" alt="Production Overview">
+    </div>
+    <div class="intro-text">
+      <p>
+        We produce and supply natural stone — marble, travertine, limestone — for wholesale distributors around the world.<br><br>
+        Backed by decades of experience and a modern production setup, we shape stone for reliable, large-scale supply.<br><br>
+        Our surfaces are available in over 10 finishings: honed, brushed, bush-hammered, flamed, deep-flamed, sandblasted, tumbled, polished, sea-washed, and custom combinations.<br><br>
+        We are able to deliver surfaces with thicknesses as low as 1 cm — a level of precision few suppliers can offer.<br><br>
+        We ship worldwide — consistently and fast — powered by our logistics partner MTS. In many cases, delivery to Central Europe takes as little as 2–3 days.<br><br>
+        Let’s do business.
+      </p>
+    </div>
+  </div>
+
+  <section class="we-are-gallery">
+    <div class="gallery">
+      <a href="images/we-are/gallery01.jpg" data-lightbox="we-are" class="gallery-item">
         <img src="images/we-are/gallery01.jpg" alt="Factory View 1">
-      </div>
-    </a>
-    <a href="images/we-are/gallery02.jpg" data-lightbox="we-are">
-      <div class="gallery-thumb">
+      </a>
+      <a href="images/we-are/gallery02.jpg" data-lightbox="we-are" class="gallery-item">
         <img src="images/we-are/gallery02.jpg" alt="Factory View 2">
-      </div>
-    </a>
-    <a href="images/we-are/gallery03.jpg" data-lightbox="we-are">
-      <div class="gallery-thumb">
+      </a>
+      <a href="images/we-are/gallery03.jpg" data-lightbox="we-are" class="gallery-item">
         <img src="images/we-are/gallery03.jpg" alt="Factory View 3">
-      </div>
-    </a>
-    <a href="images/we-are/gallery04.jpg" data-lightbox="we-are">
-      <div class="gallery-thumb">
+      </a>
+      <a href="images/we-are/gallery04.jpg" data-lightbox="we-are" class="gallery-item">
         <img src="images/we-are/gallery04.jpg" alt="Factory View 4">
-      </div>
-    </a>
-    <a href="images/we-are/gallery05.jpg" data-lightbox="we-are">
-      <div class="gallery-thumb">
+      </a>
+      <a href="images/we-are/gallery05.jpg" data-lightbox="we-are" class="gallery-item">
         <img src="images/we-are/gallery05.jpg" alt="Factory View 5">
-      </div>
-    </a>
-    <a href="images/we-are/gallery06.jpg" data-lightbox="we-are">
-      <div class="gallery-thumb">
+      </a>
+      <a href="images/we-are/gallery06.jpg" data-lightbox="we-are" class="gallery-item">
         <img src="images/we-are/gallery06.jpg" alt="Factory View 6">
-      </div>
-    </a>
-    <a href="images/we-are/gallery07.jpg" data-lightbox="we-are">
-      <div class="gallery-thumb">
+      </a>
+      <a href="images/we-are/gallery07.jpg" data-lightbox="we-are" class="gallery-item">
         <img src="images/we-are/gallery07.jpg" alt="Factory View 7">
-      </div>
-    </a>
-    <a href="images/we-are/gallery08.jpg" data-lightbox="we-are">
-      <div class="gallery-thumb">
+      </a>
+      <a href="images/we-are/gallery08.jpg" data-lightbox="we-are" class="gallery-item">
         <img src="images/we-are/gallery08.jpg" alt="Factory View 8">
-      </div>
-    </a>
-    <a href="images/we-are/gallery09.jpg" data-lightbox="we-are">
-      <div class="gallery-thumb">
+      </a>
+      <a href="images/we-are/gallery09.jpg" data-lightbox="we-are" class="gallery-item">
         <img src="images/we-are/gallery09.jpg" alt="Factory View 9">
-      </div>
-    </a>
-  </div>
-</section>
-
-<a href="#" class="gallery-test">
-  <div class="thumb">
-    <img src="images/we-are/gallery01.jpg" alt="Test Image">
-  </div>
-</a>
-
+      </a>
+    </div>
+  </section>
 
   <section class="contact-form" id="contact">
     <div class="form-container">
@@ -187,16 +185,16 @@
     });
   </script>
 
-    <script>
-  window.addEventListener("scroll", function () {
-    const header = document.querySelector("header");
-    if (window.scrollY > 10) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  });
-</script>
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (window.scrollY > 10) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
 
 </body>
 </html>
