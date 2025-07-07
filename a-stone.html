@@ -46,9 +46,12 @@
 
   <!-- Lightbox HTML -->
   <div class="lightbox-overlay" id="lightbox">
-    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-    <img id="lightbox-img" src="" alt="Zoomed Image">
-  </div>
+  <span class="lightbox-close" id="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="Large view">
+  <span class="lightbox-prev" id="lightbox-prev">&#10094;</span>  <!-- Sol ok -->
+  <span class="lightbox-next" id="lightbox-next">&#10095;</span>  <!-- Sağ ok -->
+</div>
+
 
   <section class="stone-technical-image">
     <img src="images/stones/a-stone/a-stone-chart.png" alt="A Stone Sizes and Finishes">

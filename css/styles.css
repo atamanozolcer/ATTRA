@@ -504,3 +504,23 @@ section {
   color: #fff;
   cursor: pointer;
 }
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  font-size: 3rem;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(-50%);
+  z-index: 10000;
+}
+
+.lightbox-prev {
+  left: 20px;
+}
+
+.lightbox-next {
+  right: 20px;
+}
