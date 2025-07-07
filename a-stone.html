@@ -2,72 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Stone - ATTRA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
-  <style>
-    body {
-      background-color: #f9f9f9;
-      color: #111;
-      font-family: 'Purista', sans-serif;
-    }
-
-    .stone-header {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      max-width: 1440px;
-      margin: 4rem auto;
-      padding: 0 2rem;
-      align-items: center;
-    }
-
-    .stone-header img {
-      flex: 1 1 50%;
-      max-width: 100%;
-      border-radius: 8px;
-    }
-
-    .stone-header .stone-info {
-      flex: 1 1 40%;
-    }
-
-    .stone-info h1 {
-      font-size: 3rem;
-      color: #003366;
-    }
-
-    .stone-info p {
-      font-size: 1.2rem;
-      color: #555;
-    }
-
-    .stone-carousel {
-      max-width: 1440px;
-      margin: 3rem auto;
-      padding: 0 2rem;
-      overflow-x: auto;
-      white-space: nowrap;
-    }
-
-    .stone-carousel img {
-      display: inline-block;
-      height: 200px;
-      margin-right: 1rem;
-      border-radius: 6px;
-    }
-
-    .stone-table {
-      text-align: center;
-      margin: 4rem auto;
-    }
-
-    .stone-table img {
-      width: 90%;
-      max-width: 1200px;
-      height: auto;
-    }
-  </style>
 </head>
 <body>
   <header class="main-header">
@@ -86,28 +23,32 @@
     </nav>
   </header>
 
-  <section class="stone-header">
-    <img src="images/stones/a-stone-main.jpg" alt="A Stone Main Image">
-    <div class="stone-info">
+  <section class="stone-header-section">
+    <img src="images/stones/a-stone/a-001.jpg" alt="A Stone Main Image">
+    <div class="stone-header-text">
       <h1>A STONE</h1>
       <p>Dark travertine with deep texture and unique patterns. Ideal for sophisticated and durable flooring solutions.</p>
     </div>
   </section>
 
   <section class="stone-carousel">
-    <img src="images/stones/a-01.jpg" alt="A Stone View 1">
-    <img src="images/stones/a-02.jpg" alt="A Stone View 2">
-    <img src="images/stones/a-03.jpg" alt="A Stone View 3">
-    <img src="images/stones/a-04.jpg" alt="A Stone View 4">
+    <img src="images/stones/a-stone/a-002.jpg" alt="A Stone View 1">
+    <img src="images/stones/a-stone/a-003.jpg" alt="A Stone View 2">
+    <img src="images/stones/a-stone/a-004.jpg" alt="A Stone View 3">
+    <img src="images/stones/a-stone/a-005.jpg" alt="A Stone View 4">
+    <img src="images/stones/a-stone/a-006.jpg" alt="A Stone View 5">
+    <img src="images/stones/a-stone/a-007.jpg" alt="A Stone View 6">
+    <img src="images/stones/a-stone/a-008.jpg" alt="A Stone View 7">
+    <img src="images/stones/a-stone/a-009.jpg" alt="A Stone View 8">
   </section>
 
-  <section class="stone-table">
-    <img src="images/stones/a-stone-chart.png" alt="A Stone Sizes and Finishes">
+  <section class="stone-technical-image">
+    <img src="images/stones/a-stone/a-stone-chart.png" alt="A Stone Sizes and Finishes">
   </section>
 
   <section class="contact-form" id="contact">
     <div class="form-container">
-      <h2 class="contact-heading">Need help choosing?</h2>
+      <h2 class="contact-heading">Need Help Choosing?</h2>
       <form>
         <input type="text" name="name" placeholder="Name, Surname">
         <input type="email" name="email" placeholder="Email">
@@ -142,5 +83,16 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const header = document.querySelector("header");
+      if (window.scrollY > 10) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  </script>
 </body>
 </html>
