@@ -48,7 +48,7 @@ img {
 }
 
 .main-header {
-  background-color: transparent;
+  backdrop-filter: blur(10px);
   color: #fff;
   padding: 1rem 0;
   position: sticky;
