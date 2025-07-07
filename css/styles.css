@@ -349,9 +349,11 @@ section {
   grid-column-end: 5;
 }
 
-.stone-grid a img {
-  border-radius: 10px;
+.stone-grid a:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
+
 
 .stone-divider {
   display: flex;
