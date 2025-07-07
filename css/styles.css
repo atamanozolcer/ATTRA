@@ -366,7 +366,16 @@ body {
   transform: scale(1.05);
 }
 
+.centered-img-link {
+  display: block;
+  text-align: center;
+}
 
+.centered-img-link img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
 
 .gallery-thumb {
   aspect-ratio: 1 / 1;
@@ -382,18 +391,6 @@ body {
   transition: transform 0.4s ease;
 }
 
-.gallery-thumb:hover img {
+.gallery a:hover .gallery-thumb img {
   transform: scale(1.05);
-}
-
-
-.centered-img-link {
-  display: block;
-  text-align: center;
-}
-
-.centered-img-link img {
-  max-width: 100%;
-  height: auto;
-  display: inline-block;
 }
