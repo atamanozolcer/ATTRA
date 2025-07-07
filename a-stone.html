@@ -96,29 +96,57 @@
   </footer>
 
   <script>
-    window.addEventListener("scroll", function () {
-      const header = document.querySelector("header");
-      if (window.scrollY > 10) {
-        header.classList.add("scrolled");
-      } else {
-        header.classList.remove("scrolled");
-      }
-    });
-
-    // Lightbox functionality
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-
-    document.querySelectorAll('.stone-carousel img').forEach(img => {
-      img.addEventListener('click', () => {
-        lightboxImg.src = img.src;
-        lightbox.classList.add('visible');
-      });
-    });
-
-    function closeLightbox() {
-      lightbox.classList.remove('visible');
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector("header");
+    if (window.scrollY > 10) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
     }
-  </script>
+  });
+
+  // Lightbox işlevselliği
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const images = Array.from(document.querySelectorAll('.stone-carousel img'));
+  let currentIndex = 0;
+
+  images.forEach((img, index) => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.add('visible');
+      currentIndex = index;
+    });
+  });
+
+  // Lightbox'ı kapat
+  document.getElementById('lightbox-close').addEventListener('click', () => {
+    lightbox.classList.remove('visible');
+  });
+
+  // Sol ok (önceki resim)
+  document.getElementById('lightbox-prev').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+  });
+
+  // Sağ ok (sonraki resim)
+  document.getElementById('lightbox-next').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+  });
+
+  // ESC ile lightbox'ı kapat
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      lightbox.classList.remove('visible');
+    } else if (e.key === 'ArrowRight') {
+      document.getElementById('lightbox-next').click();
+    } else if (e.key === 'ArrowLeft') {
+      document.getElementById('lightbox-prev').click();
+    }
+  });
+</script>
+
 </body>
 </html>
