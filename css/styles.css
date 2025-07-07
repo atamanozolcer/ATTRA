@@ -422,8 +422,9 @@ section {
 
 .stone-header-text h1 {
   font-family: 'Purista Bold', sans-serif;
-  font-size: 10rem;
-  color: #143C6A;
+  font-size: 7rem;
+  margin-bottom: 1rem;
+  color: #ccc;
 }
 
 .stone-header-text p {
