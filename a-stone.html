@@ -61,9 +61,10 @@
     <div class="form-container">
       <h2 class="contact-heading">Need Help Choosing?</h2>
       <form>
-        <input type="text" name="name" placeholder="Name, Surname">
-        <input type="email" name="email" placeholder="Email">
-        <textarea name="message" placeholder="Message"></textarea>
+        <input type="text" name="name" placeholder="Name, Surname" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+        <input type="hidden" name="subject" value="Website Contact Form">
         <button type="submit">Submit</button>
       </form>
     </div>
