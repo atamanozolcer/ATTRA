@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>B Stone - ATTRA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="main-header">
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html">HOME</a>
+        <a href="we-are.html">WE ARE</a>
+        <a href="stones.html">STONES</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+      <div class="nav-right">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="ATTRA Logo">
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="stone-header-section">
+    <img src="images/stones/b-stone/b-001.webp" alt="B Stone Main Image">
+    <div class="stone-header-text">
+      <h1>B STONE</h1>
+      <p>Light beige marble with warm tones and subtle veins. An elegant choice for both interior and exterior spaces.</p>
+    </div>
+  </section>
+
+  <div class="stone-carousel-wrapper">
+    <section class="stone-carousel">
+      <img src="images/stones/b-stone/b-002.webp" alt="B Stone View">
+      <img src="images/stones/b-stone/b-003.webp" alt="B Stone View">
+      <img src="images/stones/b-stone/b-004.webp" alt="B Stone View">
+      <img src="images/stones/b-stone/b-005.webp" alt="B Stone View">
+      <img src="images/stones/b-stone/b-006.webp" alt="B Stone View">
+      <img src="images/stones/b-stone/b-007-flamed.webp" alt="B Stone View">
+      <img src="images/stones/b-stone/b-008-bushhammered.webp" alt="B Stone View">
+      <img src="images/stones/b-stone/b-009-brushed.webp" alt="B Stone View">
+    </section>
+  </div>
+
+  <!-- Lightbox HTML -->
+  <div class="lightbox-overlay" id="lightbox">
+  <span class="lightbox-close" id="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="Large view">
+  <span class="lightbox-prev" id="lightbox-prev">&#10094;</span>
+  <span class="lightbox-next" id="lightbox-next">&#10095;</span>
+</div>
+
+  <section class="stone-technical-image">
+    <img src="images/stones/b-stone/b-stone-chart.png" alt="B Stone Sizes and Finishes">
+  </section>
+
+  <section class="contact-form" id="contact">
+    <div class="form-container">
+      <h2 class="contact-heading">Need Help Choosing?</h2>
+      <form>
+        <input type="text" name="name" placeholder="Name, Surname" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+        <input type="hidden" name="subject" value="Website Contact Form">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <p><strong>Factory</strong><br><br>
+        Kemalpaşa OSB Mah.<br>
+        Güney Sanayi Cad. 25<br>
+        Kemalpaşa, 35730, İzmir, Türkiye<br>
+        (On request, GPS details)</p>
+
+        <p><strong>Office</strong><br><br>
+        1476/1 Sk. 10/44<br>
+        Alsancak, 35220, İzmir, Türkiye</p>
+
+        <p>attra@attra.eu</p>
+      </div>
+      <div class="footer-right">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="Logo">
+        </a>
+        <a href="https://instagram.com"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+        <a href="https://behance.net"><img src="images/icon-behance.svg" alt="Behance"></a>
+        <a href="https://linkedin.com"><img src="images/icon-linkedin.svg" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector("header");
+    if (window.scrollY > 10) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const images = Array.from(document.querySelectorAll('.stone-carousel img'));
+  let currentIndex = 0;
+
+  images.forEach((img, index) => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.add('visible');
+      currentIndex = index;
+    });
+  });
+
+  document.getElementById('lightbox-close').addEventListener('click', () => {
+    lightbox.classList.remove('visible');
+  });
+
+  document.getElementById('lightbox-prev').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+  });
+
+  document.getElementById('lightbox-next').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      lightbox.classList.remove('visible');
+    } else if (e.key === 'ArrowRight') {
+      document.getElementById('lightbox-next').click();
+    } else if (e.key === 'ArrowLeft') {
+      document.getElementById('lightbox-prev').click();
+    }
+  });
+</script>
+
+</body>
+</html>
