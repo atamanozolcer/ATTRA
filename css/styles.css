@@ -532,3 +532,16 @@ section {
 .lightbox-next {
   right: 20px;
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInEase 1s ease-in forwards;
+}
+
+@keyframes fadeInEase {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
